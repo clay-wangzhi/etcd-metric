@@ -1,0 +1,31 @@
+apiVersion: etcd.clay.io/v1alpha1
+kind: EtcdCluster
+metadata:
+  annotations:
+    certName: env-etcd
+    featureGates: alarm=true,backup=false,backupcheck=false,consistency=true,healthy=true,monitor=false,request=true
+    importedAddr: https://cluster_ip:2379
+    kubernetes: "true"
+    remark: env Etcd 集群
+  labels:
+    alarm: "true"
+    backup: "false"
+    backupcheck: "false"
+    clusterType: imported
+    consistency: "true"
+    etcdName: work-etcd
+    healthy: "true"
+    monitor: "false"
+    request: "true"
+    version: ""
+  name: env-etcd
+  namespace: kstone
+spec:
+  clusterType: imported
+  description: env 环境 Etcd 集群
+  diskSize: 200
+  diskType: ssd
+  name: env-etcd
+  size: num
+  storageBackend: ""
+  version: ""
