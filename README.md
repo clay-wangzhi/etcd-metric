@@ -12,8 +12,8 @@ You’ll need a Kubernetes cluster to run against. You can use [KIND](https://si
 1. Install Instances of Custom Resources:
 
 ```sh
-git clone https://github.com/clay-wangzhi/etcd-metric
-cd etcd-metric
+git clone https://github.com/clay-wangzhi/etcd-metrics
+cd etcd-metrics
 kubectl apply -f deploy/crd.yaml
 ```
 
